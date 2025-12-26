@@ -1,0 +1,175 @@
+/* планшетная версия */
+@media (max-width: 1024px) {
+  .arrow-zakrash {
+    width: 42px;
+    height: 64px;
+  }
+
+  .poloska1 {
+    height: 80px;
+  }
+  .poloska-shar {
+    height: 9px;
+    transform: translateY(36px);
+  }
+
+  .shar {
+    top: -26px;
+  }
+  .shar img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .krest {
+    width: 90px;
+    height: 90px;
+  }
+  .kresti {
+    gap: 30px;
+    margin-left: 5%;
+  }
+
+  .krest-revert {
+    width: 90px;
+    height: 90px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin-left: 12px;
+  }
+
+  .text-purple {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+
+  .strelki {
+    gap: 10px;
+  }
+  .strelka {
+    width: 48px;
+    height: 48px;
+  }
+
+  .treugolnik1 {
+    width: 88px;
+    margin-top: 10px;
+    height: 65px;
+  }
+  .treugolnik2 {
+    width: 88px;
+    height: 65px;
+    margin-left: -30px;
+  }
+  .treugolnik3 {
+    width: 88px;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: -27px;
+  }
+
+  .kvadrat {
+    width: 236px;
+    height: 84px;
+  }
+
+  .rebrist {
+    width: 238px;
+  }
+
+  .poloska3 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .tuda-sude {
+    gap: 12px;
+  }
+  .polosa-right img {
+    width: 60px;
+    height: 490px;
+  }
+
+  .slovo {
+    font-size: 47px;
+  }
+  .slovo2 {
+    font-size: 47px;
+  }
+  .levo-figura {
+    width: 86px;
+  }
+  .grafik {
+    width: 488px;
+  }
+  .figura-pravo {
+    width: 255px;
+    top: 10px;
+  }
+  .poloska7 {
+    margin-bottom: 62px;
+  }
+  .trash-center {
+    margin-left: 26px;
+    overflow: visible;
+    width: calc(100% - 100px);
+  }
+
+  .arrow-zakrash:nth-child(1) {
+    display: none;
+  }
+  .arrow-zakrash:nth-child(2) {
+    display: none;
+  }
+  .arrow-zakrash:nth-child(3) {
+    display: none;
+  }
+  .strelki-yellow {
+    margin-left: -110px;
+  }
+  .one-more {
+    display: none;
+  }
+  .arrows2 {
+    width: max-content;
+  }
+
+  .pianino {
+    gap: 20px;
+  }
+  .klavisha {
+    width: 30px;
+    height: 250px;
+  }
+  .klavisha-prozrach {
+    width: 30px;
+    height: 250px;
+  }
+
+  .kresti-mobile {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 25px;
+    top: 25px;
+    gap: 25px;
+  }
+
+  .krest-mobile {
+    width: 55px;
+    height: 55px;
+    animation: spin 2s linear infinite;
+
+  }
+
+  .krest-mobile-revert {
+    width: 55px;
+    
+    height: 55px;
+    animation: spin-revert 2s linear infinite;
+  }
+}

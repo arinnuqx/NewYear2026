@@ -1,5 +1,475 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,400i,700,700i&amp;subset=cyrillic");
 @import "layout.css";
-@import "adaptive.css";
 @import "animation.css";
+
+@font-face {
+  font-family: "FairFax";
+  src: url("../fonts/FairfaxHD.ttf");
+}
+
+@font-face {
+  font-family: "Akony";
+  src: url("../fonts/AKONY.ttf");
+}
+
+body {
+  background-color: #57585a;
+}
+
+.poloska1 {
+  height: 105px;
+  background-color: #b6b6fc;
+  display: flex;
+}
+.poloska-shar {
+  width: calc(100% - 525px);
+  height: 16px;
+  background-color: black;
+  transform: translateY(44px);
+  position: relative;
+}
+.arrows {
+  height: min-content;
+  background-color: #57585a;
+  width: 525px;
+  transform: translateY(7px);
+  padding-left: 17px;
+}
+
+.arrow-prosrach {
+  stroke: #daffb5;
+  stroke-width: 3px;
+}
+
+.arrow-zakrash {
+  stroke: black;
+  width: 60px;
+  height: 91px;
+  stroke-width: 3px;
+}
+
+.arrow-zakrash:nth-child(1) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 2s;
+}
+
+.arrow-zakrash:nth-child(2) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 1.75s;
+}
+
+.arrow-zakrash:nth-child(3) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 1.5s;
+}
+.arrow-zakrash:nth-child(4) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 1.25s;
+
+}
+.arrow-zakrash:nth-child(5) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 1s;
+
+}
+.arrow-zakrash:nth-child(6) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 0.75s;
+}
+.arrow-zakrash:nth-child(7) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 0.5s;
+}
+.arrow-zakrash:nth-child(8) {
+    animation: arrow-fill-сhange 2s infinite;
+    animation-delay: 0.25s;
+}
+
+.shar {
+  position: absolute;
+  left: 30px;
+  top: -42px;
+  animation: shar-animate 2s linear infinite;
+}
+.poloska2 {
+  display: flex;
+}
+.strelki {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: fit-content;
+  height: fit-content;
+  gap: 20px;
+}
+
+.strelka {
+  width: 96px;
+  height: 96px;
+}
+
+.strelka:nth-child(1) {
+  animation: fill-change 2s infinite;
+  animation-delay: 0.5s;
+}
+
+.strelka:nth-child(2) {
+  transform: rotate(90deg);
+  animation: fill-change 2s infinite;
+  animation-delay: 1s;
+}
+
+.strelka:nth-child(3) {
+  transform: rotate(270deg);
+  animation: fill-change 2s infinite;
+}
+
+.strelka:nth-child(4) {
+  transform: rotate(180deg);
+  fill: transparent;
+  animation: fill-change 2s infinite;
+  animation-delay: 1.5s;
+
+}
+.strelka {
+  fill: #b6b6fc;
+  stroke: #b6b6fc;
+  stroke-width: 3px;
+}
+.rels {
+  margin-top: 25px;
+}
+
+
+.kvadrat {
+  height: 148px;
+  width: 416px;
+  background-color: black;
+  margin-top: 20px;
+}
+.treugolniki {
+  position: absolute;
+}
+.treugolnik2 {
+  width: 158px;
+  height: 118px;
+  transform: rotate(180deg);
+  margin-left: -50px;
+}
+.treugolnik1 {
+  width: 158px;
+  height: 118px;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+.treugolnik3 {
+  width: 158px;
+  height: 118px;
+  margin-left: -45px;
+  margin-top: 18px;
+}
+.text {
+  font-family: "FairFax";
+  font-size: 32px;
+  color: #daffb5;
+  margin-left: 29px;
+  margin-top: 18px;
+}
+.text-purple {
+  font-family: "FairFax";
+  font-size: 35px;
+  color: #b6b6fc;
+  margin-left: 29px;
+  margin-top: 32px;
+}
+.polosa-right {
+  position: absolute;
+  right: 0;
+  background-color: #b6b6fc;
+  padding-left: 12px;
+  padding-right: 12px;
+  z-index: 10;
+}
+.poloska3 {
+  font-family: "Akony";
+  color: black;
+  background-color: #b6b6fc;
+  font-size: 64px;
+  font-weight: bold;
+  padding-top: 40px;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+.poloska4 {
+  display: flex;
+}
+.text-begit {
+  white-space: nowrap;
+  animation: run 7s linear infinite;
+}
+.long {
+  height: 168px;
+  width: 29px;
+  background-color: #b6b6fc;
+  animation: stretch2 2s ease-in-out infinite;
+}
+.short {
+  height: 135px;
+  width: 23px;
+  background-color: black;
+  animation: stretch 2s ease-in-out infinite;
+}
+
+.tuda-suda {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.kresti {
+  margin-left: 8%;
+  margin-top: 30px;
+  display: flex;
+  gap: 72px;
+}
+
+.krest {
+  animation: spin 2s linear infinite;
+}
+
+.krest-revert {
+  animation: spin-revert 2s linear infinite;
+}
+
+
+.poloska4 {
+  height: 190px;
+}
+
+.poloska5 {
+  background-color: #57585a;
+  height: 40px;
+  width: 100%;
+  direction: rtl;
+  margin-top: 30px;
+}
+
+.vlevo-vpravo {
+  height: 40px;
+  background-color: black;
+  animation: vlevo-vpravo 4s linear infinite;
+}
+.ramka1 {
+  height: 55px;
+  width: 100%;
+  background-color: black;
+}
+.photo {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.photo:hover {
+  opacity: 1;
+}
+
+.ramka2 {
+  height: 56px;
+  width: 100%;
+  background-color: black;
+  margin-top: -2px;
+}
+
+.poloska6 {
+  background-color: #b6b6fc;
+}
+
+.poloska7 {
+  background: black;
+  padding-top: 15px;
+  margin-bottom: 110px;
+}
+
+.slovo {
+  font-family: "Akony";
+  font-size: 73px;
+  color: #daffb5;
+}
+.slovo2 {
+  float: right;
+  font-family: "Akony";
+  font-size: 73px;
+  color: #daffb5;
+  transform: rotate(180deg);
+  background: black;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.poloska8 {
+  display: flex;
+  position: relative;
+}
+
+.trash-center {
+  margin-left: 44px;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grafik {
+  margin-bottom: 50px;
+}
+
+.strelki-yellow {
+  background-color: #b6b6fc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.strelki-track {
+  display: flex;
+  gap: 20px;
+  animation: move-left 2s linear infinite;
+}
+
+.figura-pravo {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 38px;
+  width: 300px;
+}
+.line1 {
+  height: 6px;
+  background-color: #daffb5;
+  animation: line1 2s linear infinite;
+}
+
+.line2 {
+  height: 6px;
+  background-color: #daffb5;
+  animation: line2 2s linear infinite;
+}
+
+.line3 {
+  height: 6px;
+  background-color: #daffb5;
+  animation: line3 2s linear infinite;
+}
+
+.line4 {
+  height: 6px;
+  background-color: #daffb5;
+  animation: line4 2s linear infinite;
+}
+
+.line5 {
+  height: 6px;
+  background-color: #daffb5;
+  animation: line5 2s linear infinite;
+}
+.line6 {
+  height: 6px;
+  background-color: #daffb5;
+  animation: line6 2s linear infinite;
+}
+.line7 {
+  height: 6px;
+  width: 250px;
+  background-color: #daffb5;
+  animation: line7 2s linear infinite;
+}
+
+.poloska9 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pianino {
+  display: flex;
+  gap: 50px;
+}
+
+.klavisha {
+  width: 52px;
+  height: 340px;
+  background-color: #daffb5;
+  border: 4px solid #daffb5;
+}
+
+.klavisha-prozrach {
+  width: 52px;
+  height: 340px;
+  background-color: transparent;
+  border: 4px solid #daffb5;
+}
+
+.one-more {
+  position: relative;
+}
+
+.krest-obertka {
+  position: absolute;
+  right: 40px;
+  top: 180px;
+}
+
+.krest-obertka img {
+  width: 160px;
+}
+
+.kresti-little {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.krest-little {
+  animation: spin 2s linear infinite;
+}
+
+.krest-little-zakrash {
+  animation: spin-revert 2s linear infinite;
+}
+
+.poloska10 {
+  height: 70px;
+  background: url(../images/kubiki.svg);
+}
+
+.poloska11 {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.bottom-begit {
+  display: flex;
+  gap: 30px;
+  white-space: nowrap;
+  animation: run 9s linear infinite;
+}
+
+.text-bottom {
+  font-family: "FairFax";
+  color: #daffb5;
+  font-size: 52px;
+}
+
+.kresti-mobile {
+  display: none;
+}

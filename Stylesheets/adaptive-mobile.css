@@ -1,0 +1,108 @@
+@media (max-width: 767px) {
+    .poloska-shar {
+        width: 100%;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .polosa-right {
+        display: none;
+    }
+
+    .poloska2 {
+        flex-direction: column;
+        position: relative;
+    }
+    .kresti {
+        display: none;
+    }
+    .poloska3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text-begit {
+        font-size: 14px;
+    }
+    .poloska4 {
+        display: none;
+    }
+
+    .poloska5 {
+        display: none;
+    }
+
+    .ramka1 {
+        height: 15px;
+    }
+    .ramka2 {
+        height: 15px;
+    }
+
+    .slovo {
+        font-size: 18px;
+    }
+    .slovo2 {
+        font-size: 18px;
+    }
+
+    .poloska7 {
+        padding-top: 6px;
+    }
+
+    .grafik {
+        width: 255px;
+        transform: rotate(90deg) scaleY(-1);
+        margin-left: -30px;
+    }
+
+    .levo-figura {
+        width: 58px;
+    }
+
+    .figura-pravo {
+        width: 176px;
+    }
+
+    .arrows2 {
+        display: none;
+    }
+
+    .strelki-yellow {
+        transform: rotate(90deg);
+    }
+
+    .figura-pravo {
+        top: 0;
+    }
+
+    .strelki-yellow {
+        display: none;
+    }
+
+    .lines {
+        display: none;
+    }
+
+    .poloska9 {
+        margin-top: 10px;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .pianino {
+        justify-content: space-between;
+    }
+
+    .strelki {
+        display: none;
+    }
+
+    .kresti-little {
+        margin-bottom: 10px;
+    }
+}
